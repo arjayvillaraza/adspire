@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adspire Studio — About</title>
+  <style>
+    :root {
+      --primary: #000;
+      --secondary: #fff;
+      --accent: #222;
+      --light-gray: #f2f2f2;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: var(--secondary);
+      color: var(--primary);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--secondary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.5em;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: var(--secondary);
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--light-gray);
+    }
+
+    /* About Section */
+    .about {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 100px 10%;
+      background: var(--light-gray);
+    }
+
+    .about-box {
+      width: 100%;
+      max-width: 900px;
+      background: var(--secondary);
+      border: 1px solid var(--primary);
+      border-radius: 12px;
+      padding: 50px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-box h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .about-box p {
+      font-size: 1.05em;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    footer {
+      background: var(--accent);
+      color: var(--secondary);
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Adspire Studio</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+      <a href="home.html#book-now">Book Now</a>
+    </nav>
+  </header>
+
+  <section class="about">
+    <div class="about-box">
+      <h2>About Our Studio</h2>
+      <p>
+        AdSpire Studio is a creative studio dedicated to bringing ideas to life through innovation, passion, and artistry. 
+        Our team specializes in Video Advertising and Photography Services that capture authentic moments and powerful stories.  
+        <br><br>
+        Established by a group of visionary creatives, AdSpire studio was built with the goal of helping businesses and individuals express their brand and message through high-quality visuals. 
+        From professional Ads to Studio Shoots, and Event Coverage we ensure every project reflects excellence and originality.  
+        <br><br>
+        With a strong commitment to creativity and professionalism, we continue to evolve in the digital media industry, turning imagination into visual reality, one frame at a time.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Adspire Studio. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

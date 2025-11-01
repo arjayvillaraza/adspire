@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adspire Studio — Services</title>
+  <style>
+    :root {
+      --primary: #000;
+      --secondary: #fff;
+      --accent: #222;
+      --light-gray: #f2f2f2;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: var(--secondary);
+      color: var(--primary);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--secondary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.5em;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: var(--secondary);
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--light-gray);
+    }
+
+    /* Services Section */
+    .services {
+      text-align: center;
+      padding: 100px 5%;
+      background: var(--light-gray);
+      min-height: 80vh;
+    }
+
+    .services h2 {
+      font-size: 2em;
+      margin-bottom: 50px;
+    }
+
+    .service-list {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 25px;
+      flex-wrap: nowrap; /* ensures all 4 stay in one row */
+      overflow-x: auto; /* enables side scrolling on small screens */
+      padding-bottom: 20px;
+    }
+
+    .service-box {
+      flex: 0 0 22%; /* each box takes ~1/4 of the row */
+      background: var(--secondary);
+      border: 1px solid var(--primary);
+      border-radius: 12px;
+      padding: 40px 25px;
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      min-width: 250px;
+    }
+
+    .service-box:hover {
+      background: var(--primary);
+      color: var(--secondary);
+      transform: translateY(-5px);
+    }
+
+    .service-box h3 {
+      font-size: 1.3em;
+      margin-bottom: 15px;
+    }
+
+    .service-box p {
+      font-size: 0.95em;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: var(--accent);
+      color: var(--secondary);
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+    }
+
+    /* Scrollbar styling for small screens */
+    .service-list::-webkit-scrollbar {
+      height: 6px;
+    }
+    .service-list::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Adspire Studio</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+      <a href="home.html#book-now">Book Now</a>
+    </nav>
+  </header>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service-box">
+        <h3>🎬 Video Advertising</h3>
+        <p>We create professional video ads that capture your brand’s message and engage your audience through creative storytelling and cinematic visuals.</p>
+      </div>
+
+      <div class="service-box">
+        <h3>📸 Studio Photography</h3>
+        <p>Professional studio photoshoots for portraits, brands, or creative projects — captured with expert lighting and composition.</p>
+      </div>
+
+      <div class="service-box">
+        <h3>📷 Promotional Photography</h3>
+        <p>High-quality promotional images to elevate your business, products, and marketing campaigns with strong visual appeal.</p>
+      </div>
+
+      <div class="service-box">
+        <h3>🎉 Event Photography</h3>
+        <p>Capture every special moment with professional event photography that tells your story in stunning visual detail.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Adspire Studio. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

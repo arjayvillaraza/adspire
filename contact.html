@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adspire Studio — Contact</title>
+  <style>
+    :root {
+      --primary: #000;
+      --secondary: #fff;
+      --light-gray: #f2f2f2;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: var(--secondary);
+      color: var(--primary);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--secondary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.5em;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: var(--secondary);
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--light-gray);
+    }
+
+    .contact {
+      text-align: center;
+      padding: 100px 5%;
+      background: var(--light-gray);
+      min-height: 80vh;
+    }
+
+    .contact h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 1.1em;
+      margin-bottom: 40px;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--secondary);
+      border: 1px solid var(--primary);
+      border-radius: 12px;
+      padding: 15px 25px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+
+    .social-link:hover {
+      background: var(--primary);
+      color: var(--secondary);
+      transform: translateY(-5px);
+    }
+
+    .social-link img {
+      width: 30px;
+      height: 30px;
+    }
+
+    footer {
+      background: var(--primary);
+      color: var(--secondary);
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Adspire Studio</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+      <a href="home.html#book-now">Book Now</a>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Get in Touch</h2>
+    <p>Follow and connect with us on social media for updates, behind-the-scenes content, and more!</p>
+
+    <div class="socials">
+      <a href="https://www.tiktok.com/@adspire_studio" class="social-link" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046126.png" alt="TikTok">
+        TikTok — @adspire_studio
+      </a>
+
+      <a href="https://www.instagram.com/adspirestudio_25" class="social-link" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+        Instagram — AdSpireStudio
+      </a>
+
+      <a href="https://www.facebook.com/adspirestudio" class="social-link" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        Facebook — AdspireStudio
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Adspire Studio. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
